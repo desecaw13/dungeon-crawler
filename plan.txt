@@ -6,7 +6,7 @@ future and past (scifi and fantasy)
 math- points and planes
 
 [x] make 2d grid
-[] allow movement in grid
+[x] allow movement in grid
 [] turn grid into randomly generanted maze
 [] have rooms be a packaged scene that is customizable
 
