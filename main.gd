@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 	move()
 	print(pos)
 
-func move():
+func move() -> void:
 	if Input.is_action_just_pressed('Left'):
 		remove_child(map[pos[0]][pos[1]])
 		pos[0] -= 1

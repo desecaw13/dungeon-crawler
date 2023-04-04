@@ -7,8 +7,12 @@ math- points and planes
 
 [x] make 2d grid
 [x] allow movement in grid
+[] allow turning ()
+[] limit movement options depending on what paths can be taken
 [] turn grid into randomly generanted maze
-[] have rooms be a packaged scene that is customizable
+[x] have rooms be a packaged scene that is customizable
+[] add combat and puzzles or smth
+[] add music
 
 [color = where you are
 sections or rooms are colored
