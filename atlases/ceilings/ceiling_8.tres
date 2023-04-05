@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dwd5t54bbye0o"]
+
+[ext_resource type="Texture2D" uid="uid://dpnbl2rm7t7xq" path="res://images/dithered_ceiling.png" id="1_74a7q"]
+
+[resource]
+atlas = ExtResource("1_74a7q")
+region = Rect2(480, 120, 160, 120)

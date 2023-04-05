@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c1lfyr27v2y31"]
+
+[ext_resource type="Texture2D" uid="uid://cdq57bu2pse3o" path="res://images/dithered_wall.png" id="1_cw7w2"]
+
+[resource]
+atlas = ExtResource("1_cw7w2")
+region = Rect2(480, 0, 160, 120)

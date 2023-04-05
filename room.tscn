@@ -1,10 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://bixkflxxqh81"]
+[gd_scene load_steps=4 format=3 uid="uid://b3jvsbda8nfh2"]
 
 [ext_resource type="Script" path="res://room.gd" id="1_ro8kt"]
+[ext_resource type="Texture2D" uid="uid://di665w8y0t0rx" path="res://atlases/walls/wall_7.tres" id="2_h3yb4"]
+[ext_resource type="Texture2D" uid="uid://dwd5t54bbye0o" path="res://atlases/ceilings/ceiling_8.tres" id="3_kotg0"]
 
 [node name="Room" type="Node2D"]
 script = ExtResource("1_ro8kt")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(575.75, 323.75)
-scale = Vector2(1152.5, 648.5)
+position = Vector2(640, 480)
+scale = Vector2(8, 8)
+
+[node name="Foreground" type="Sprite2D" parent="."]
+position = Vector2(640, 480)
+scale = Vector2(8, 8)
+texture = ExtResource("2_h3yb4")
+
+[node name="Ceiling" type="Sprite2D" parent="."]
+position = Vector2(640, 480)
+scale = Vector2(8, 8)
+texture = ExtResource("3_kotg0")

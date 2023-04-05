@@ -26,7 +26,7 @@ func create_map(width: int, height: int) -> Array:
 
 func _ready() -> void:
 	randomize()
-	add_child(map[pos[0]][pos[1]])
+	add_child(map[pos.x][pos.y])
 
 #	var out := ''
 #	for row in map:
@@ -42,18 +42,18 @@ func _process(delta: float) -> void:
 
 func move() -> void:
 	if Input.is_action_just_pressed('Left'):
-		remove_child(map[pos[0]][pos[1]])
-		pos[0] -= 1
-		add_child(map[pos[0]][pos[1]])
+		remove_child(map[pos.x][pos.y])
+		pos.x -= 1
+		add_child(map[pos.x][pos.y])
 	if Input.is_action_just_pressed('Right'):
-		remove_child(map[pos[0]][pos[1]])
-		pos[0] += 1
-		add_child(map[pos[0]][pos[1]])
+		remove_child(map[pos.x][pos.y])
+		pos.x += 1
+		add_child(map[pos.x][pos.y])
 	if Input.is_action_just_pressed('Forwards'):
-		remove_child(map[pos[0]][pos[1]])
-		pos[1] += 1
-		add_child(map[pos[0]][pos[1]])
+		remove_child(map[pos.x][pos.y])
+		pos.y += 1
+		add_child(map[pos.x][pos.y])
 	if Input.is_action_just_pressed('Back'):
-		remove_child(map[pos[0]][pos[1]])
-		pos[1] -=1
-		add_child(map[pos[0]][pos[1]])
+		remove_child(map[pos.x][pos.y])
+		pos.y -=1
+		add_child(map[pos.x][pos.y])

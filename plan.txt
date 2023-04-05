@@ -18,3 +18,5 @@ math- points and planes
 sections or rooms are colored
 floor and cleiling tell where you are
 and walls tell where you can go]
+
+160x120

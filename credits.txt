@@ -1,0 +1,4 @@
+
+art assets:
+	Heroine Dusk is created by Clint Bellanger http://clintbellanger.net Ascension: Adventure Tiles by Chris Leclair/XCVG (xcvgsystems.net) [CC-BY-SA 3.0] based on Heroine Dusk by Clint Bellanger (heroinedusk.com) [CC-BY-SA 3.0]
+	https://opengameart.org/content/first-person-dungeon-crawl-more-tilesets
