@@ -12,7 +12,7 @@ func _init() -> void:
 		left = randi() % 2 == 0,
 		right = randi() % 2 == 0,
 		forwards = randi() % 2 == 0,
-		back = randi() % 2 == 0
+		back = true
 	}
 
 func _ready() -> void:

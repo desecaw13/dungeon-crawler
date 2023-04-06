@@ -1,18 +1,23 @@
-duality
+random color maze/labrinth (wip)
 
-ideas:
-black and white
-future and past (scifi and fantasy)
+duality ideas:
 math- points and planes
 
 [x] make 2d grid
 [x] allow movement in grid
 [] allow turning ()
-[] limit movement options depending on what paths can be taken
+[x] limit movement options depending on what paths can be taken
+[x] ensure player cannot get trapped (allow wrap-around)
 [] turn grid into randomly generanted maze
 [x] have rooms be a packaged scene that is customizable
-[] add combat and puzzles or smth
+[] add player stats (health and attack or smth)
+[] add combat and puzzles(the map is the puzzle)
+[] add random loot
 [] add music
+[] display pos?
+[] create main menu (size option, start and exit buttons)
+
+get all magic items/keys then get to the center
 
 [color = where you are
 sections or rooms are colored

@@ -7,7 +7,17 @@ var y_limit := 10
 
 var pos := Vector2.ZERO :
 	set (value):
-		pos = value.clamp(Vector2.ZERO, Vector2(x_limit - 1, y_limit - 1))
+		if value.x < 0:
+			value.x = x_limit - 1
+		elif value.x >= x_limit:
+			value.x = 0
+
+		if value.y < 0:
+			value.y = y_limit - 1
+		elif value.y >= y_limit:
+			value.y = 0
+
+		pos = value#.clamp(Vector2.ZERO, Vector2(x_limit - 1, y_limit - 1))
 
 var room_pks: PackedScene = preload("res://room.tscn")
 
@@ -38,22 +48,38 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	move()
+	print(map[pos.x][pos.y].directions)
 	print(pos)
 
 func move() -> void:
-	if Input.is_action_just_pressed('Left'):
+	if (
+			Input.is_action_just_pressed('Left')
+			and map[pos.x][pos.y].directions.left
+	):
 		remove_child(map[pos.x][pos.y])
 		pos.x -= 1
 		add_child(map[pos.x][pos.y])
-	if Input.is_action_just_pressed('Right'):
+
+	if (
+			Input.is_action_just_pressed('Right')
+			and map[pos.x][pos.y].directions.right
+	):
 		remove_child(map[pos.x][pos.y])
 		pos.x += 1
 		add_child(map[pos.x][pos.y])
-	if Input.is_action_just_pressed('Forwards'):
+
+	if (
+			Input.is_action_just_pressed('Forwards')
+			and map[pos.x][pos.y].directions.forwards
+	):
 		remove_child(map[pos.x][pos.y])
 		pos.y += 1
 		add_child(map[pos.x][pos.y])
-	if Input.is_action_just_pressed('Back'):
+
+	if (
+			Input.is_action_just_pressed('Back')
+			and map[pos.x][pos.y].directions.back
+	):
 		remove_child(map[pos.x][pos.y])
 		pos.y -=1
 		add_child(map[pos.x][pos.y])
