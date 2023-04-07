@@ -5,9 +5,10 @@ math- points and planes
 
 [x] make 2d grid
 [x] allow movement in grid
-[] allow turning ()
+[] allow turning
 [x] limit movement options depending on what paths can be taken
 [x] ensure player cannot get trapped (allow wrap-around)
+[] tell player what directions they can and cant go
 [] turn grid into randomly generanted maze
 [x] have rooms be a packaged scene that is customizable
 [] add player stats (health and attack or smth)
@@ -18,6 +19,9 @@ math- points and planes
 [] create main menu (size option, start and exit buttons)
 
 get all magic items/keys then get to the center
+there are two sets of keys you need: one is flesh/nature themed and the other is metal/synthetic
+
+handmade levels
 
 [color = where you are
 sections or rooms are colored

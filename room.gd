@@ -1,11 +1,13 @@
 class_name Room
 extends Node2D
 
+var directions: Dictionary
+var is_special: bool
+
 @onready var bg := $Background
 @onready var fg := $Foreground
 @onready var cf := $Ceiling
 
-var directions: Dictionary
 
 func _init() -> void:
 	directions = {
@@ -14,6 +16,7 @@ func _init() -> void:
 		forwards = randi() % 2 == 0,
 		back = true
 	}
+
 
 func _ready() -> void:
 	var color := Color(randf(), randf(), randf())
