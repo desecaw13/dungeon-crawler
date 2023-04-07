@@ -1,7 +1,0 @@
-[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cc1vogpsthd3n"]
-
-[ext_resource type="Texture2D" uid="uid://cdq57bu2pse3o" path="res://images/dithered_wall.png" id="1_dj7ht"]
-
-[resource]
-atlas = ExtResource("1_dj7ht")
-region = Rect2(480, 120, 160, 120)

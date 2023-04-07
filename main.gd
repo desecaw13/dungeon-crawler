@@ -25,13 +25,13 @@ var room_pks: PackedScene = preload("res://room.tscn")
 func create_map(width: int, height: int) -> Array:
 	var _map := []
 
-	var locations = {}
+	var locations := {}
 	var amount: int = 20#(x_limit * y_limit) / 5
 
 	while locations.size() < amount:
 		locations[Vector2i(randi_range(0, x_limit - 1), randi_range(0, y_limit - 1))] = 1
 
-	locations = locations.keys()
+	var key_locations := locations.keys()
 
 	for x in range(width):
 		var col := []
@@ -41,10 +41,12 @@ func create_map(width: int, height: int) -> Array:
 			var room: Room = room_pks.instantiate()
 			var loc := Vector2i(x,y)
 
-			if loc in locations:
-				room.is_special = true
+			if loc == Vector2i(x_limit / 2, y_limit / 2):
+				room.type = Room.Type.EXIT
+			elif loc in key_locations:
+				room.type = Room.Type.KEY
 			else:
-				room.is_special = false
+				room.type = Room.Type.NORMAL
 
 			col.append(room)
 
@@ -66,6 +68,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	move()
+	#print(map[pos.x][pos.y].is_special)
 	#print(map[pos.x][pos.y].directions)
 	#print(pos)
 
