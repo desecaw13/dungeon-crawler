@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://ddcejgh77dwq1"]
+[gd_scene load_steps=8 format=3 uid="uid://ddcejgh77dwq1"]
 
 [ext_resource type="Script" path="res://room.gd" id="1_ro8kt"]
 [ext_resource type="Texture2D" uid="uid://bbd70jspqjxao" path="res://images/blank.png" id="2_0hemv"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://di665w8y0t0rx" path="res://atlases/walls/wall_6.tres" id="2_xypr0"]
 [ext_resource type="Texture2D" uid="uid://dwd5t54bbye0o" path="res://atlases/ceilings/ceiling_7.tres" id="3_ed4e2"]
 [ext_resource type="Texture2D" uid="uid://cwsh8165vquo2" path="res://atlases/ceilings/ceiling_5.tres" id="3_fow7i"]
+[ext_resource type="Texture2D" uid="uid://cbpvge3l48nxe" path="res://images/arrow.png" id="7_3ulw8"]
 
 [node name="Room" type="Node2D"]
 script = ExtResource("1_ro8kt")
@@ -34,3 +35,22 @@ texture = ExtResource("2_xypr0")
 position = Vector2(640, 480)
 scale = Vector2(8, 8)
 texture = ExtResource("3_ed4e2")
+
+[node name="LeftArrow" type="Sprite2D" parent="."]
+position = Vector2(50, 480)
+rotation = 4.71239
+texture = ExtResource("7_3ulw8")
+
+[node name="RightArrow" type="Sprite2D" parent="."]
+position = Vector2(1230, 480)
+rotation = 1.5708
+texture = ExtResource("7_3ulw8")
+
+[node name="UpArrow" type="Sprite2D" parent="."]
+position = Vector2(640, 50)
+texture = ExtResource("7_3ulw8")
+
+[node name="DownArrow" type="Sprite2D" parent="."]
+position = Vector2(640, 910)
+rotation = -3.14159
+texture = ExtResource("7_3ulw8")

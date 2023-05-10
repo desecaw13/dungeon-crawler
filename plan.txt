@@ -2,6 +2,7 @@ random color maze/labrinth (wip)
 
 duality ideas:
 math- points and planes
+fantasy vs scifi
 
 [x] make 2d grid
 [x] allow movement in grid
@@ -21,7 +22,11 @@ math- points and planes
 get all magic items/keys then get to the center
 there are two sets of keys you need: one is flesh/nature themed and the other is metal/synthetic
 
-handmade levels
+handmade levels [?]
+
+danger comes from the delve/crawl/dungeon itself (traps / no enemies)
+
+daggerfall combat with mouse (option to use just click)
 
 [color = where you are
 sections or rooms are colored
